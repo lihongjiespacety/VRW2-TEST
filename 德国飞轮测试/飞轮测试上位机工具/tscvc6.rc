@@ -1,0 +1,318 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\tscvc6.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "天仪CAN-UART助手"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "天仪CAN-UART助手 1.0 版",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2019",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_TSCVC6_DIALOG DIALOGEX 0, 0, 521, 474
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "天仪CAN-UART助手"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "发送",IDC_BUTTON1,418,339,44,21
+    PUSHBUTTON      "打开",IDC_BUTTON2,124,62,64,25
+    GROUPBOX        "串口配置",IDC_STATIC,7,7,199,161
+    CONTROL         "",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,57,143,16,8
+    EDITTEXT        IDC_EDIT1,7,364,332,98,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL
+    LTEXT           "端口:",IDC_STATIC,22,27,21,8
+    LTEXT           "波特率:",IDC_STATIC,22,50,29,8
+    LTEXT           "数据位:",IDC_STATIC,22,73,29,8
+    LTEXT           "停止位:",IDC_STATIC,22,96,29,8
+    LTEXT           "状态位:",IDC_STATIC,22,142,29,8
+    LTEXT           "校验:",IDC_STATIC,22,119,21,8
+    COMBOBOX        IDC_COMBO1,57,25,48,65,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,57,48,48,57,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO3,57,71,48,57,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO4,57,94,48,47,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO5,57,117,48,52,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "清除接收",IDC_BUTTON3,363,397,42,23
+    PUSHBUTTON      "帮助",IDC_BUTTON8,481,7,34,14
+    EDITTEXT        IDC_EDIT4,7,325,332,36,ES_MULTILINE | WS_VSCROLL
+    PUSHBUTTON      "清除发送",IDC_BUTTON4,363,339,44,23
+    CONTROL         "HEX发送",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,363,323,44,10
+    CONTROL         "HEX接收",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,363,383,44,10
+    GROUPBOX        "遥控",IDC_STATIC,207,7,185,161
+    GROUPBOX        "脚本执行",IDC_STATIC,7,267,386,49
+    EDITTEXT        IDC_EDIT7,15,277,168,14,ES_AUTOHSCROLL
+    CONTROL         "Progress1",IDC_PROGRESS2,"msctls_progress32",WS_BORDER,
+                    15,299,167,14
+    PUSHBUTTON      "选择文件",IDC_BUTTON11,189,274,44,21
+    PUSHBUTTON      "遥测请求",IDC_BUTTON5,209,16,50,14
+    PUSHBUTTON      "获取版本",IDC_BUTTON6,265,16,50,14
+    PUSHBUTTON      "设置最大力矩",IDC_BUTTON7,339,51,50,14
+    PUSHBUTTON      "设置电流",IDC_BUTTON10,339,89,50,14
+    PUSHBUTTON      "设置Net力矩",IDC_BUTTON13,339,108,50,14
+    PUSHBUTTON      "RS422控制",IDC_BUTTON14,339,128,50,14
+    PUSHBUTTON      "CAN复位",IDC_BUTTON15,339,146,50,14
+    GROUPBOX        "当前状态",IDC_STATIC,7,174,492,93
+    EDITTEXT        IDC_EDIT2,49,184,60,14,ES_AUTOHSCROLL
+    LTEXT           "版本",IDC_STATIC,13,187,17,8
+    LTEXT           "A命令计数",IDC_STATIC,13,200,37,8
+    LTEXT           "B命令计数",IDC_STATIC,59,200,37,8
+    LTEXT           "A错误计数",IDC_STATIC,106,200,37,8
+    LTEXT           "B错误计数",IDC_STATIC,151,200,37,8
+    LTEXT           "状态",IDC_STATIC,194,200,17,8
+    LTEXT           "A发送错误",IDC_STATIC,235,200,37,8
+    LTEXT           "A接收错误",IDC_STATIC,278,200,40,8
+    LTEXT           "B发送错误",IDC_STATIC,322,200,37,8
+    LTEXT           "B接收错误",IDC_STATIC,367,200,40,8
+    LTEXT           "功率(mW)",IDC_STATIC,13,231,33,8
+    LTEXT           "速度(rad/s)",IDC_STATIC,59,231,45,8
+    LTEXT           "力矩(Nm)",IDC_STATIC,106,231,33,8
+    LTEXT           "电流",IDC_STATIC,151,231,17,8
+    LTEXT           "电机温度",IDC_STATIC,194,231,33,8
+    LTEXT           "PCB温度",IDC_STATIC,235,231,29,8
+    LTEXT           "最大力矩",IDC_STATIC,278,231,29,8
+    LTEXT           "最大电流",IDC_STATIC,322,231,37,8
+    LTEXT           "系统时间",IDC_STATIC,367,231,37,8
+    LTEXT           "0.005-0.060(Nm)",IDC_STATIC,268,55,61,8
+    EDITTEXT        IDC_EDIT3,209,53,54,14,ES_AUTOHSCROLL
+    LTEXT           "+/-628.3185(rad/s)",IDC_STATIC,268,74,73,8
+    EDITTEXT        IDC_EDIT5,209,72,54,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "设置速度",IDC_BUTTON16,339,70,50,14
+    LTEXT           "+-32767",IDC_STATIC,268,93,67,8
+    EDITTEXT        IDC_EDIT6,209,91,53,14,ES_AUTOHSCROLL
+    LTEXT           "+-60(mNm)",IDC_STATIC,268,112,37,8
+    EDITTEXT        IDC_EDIT8,209,110,51,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT9,209,126,51,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT10,209,148,51,14,ES_AUTOHSCROLL
+    LTEXT           "0:关 其他值:开",IDC_STATIC,268,130,57,8
+    LTEXT           "1:A 2:B 3:A+B",IDC_STATIC,268,150,57,8
+    LTEXT           "源:目的地址",IDC_STATIC,210,38,45,8
+    EDITTEXT        IDC_EDIT11,258,35,35,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT12,296,35,38,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "开始执行",IDC_BUTTON9,286,287,50,14
+    PUSHBUTTON      "设置",IDC_BUTTON17,339,35,50,14
+    EDITTEXT        IDC_EDIT13,13,212,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT14,59,212,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT15,106,212,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT16,151,212,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT17,194,212,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT18,235,212,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT19,278,212,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT20,322,212,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT21,367,212,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT22,13,245,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT23,59,245,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT24,106,245,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT25,151,245,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT26,194,245,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT27,235,245,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT28,278,245,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT29,322,245,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT30,367,245,40,14,ES_AUTOHSCROLL
+    LTEXT           "B复位",IDC_STATIC,411,200,21,8
+    LTEXT           "B复位",IDC_STATIC,457,200,40,8
+    EDITTEXT        IDC_EDIT31,411,212,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT32,457,212,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "记录",IDC_BUTTON12,419,235,64,25
+    LTEXT           "发送包数",IDC_STATIC,123,187,33,8
+    EDITTEXT        IDC_EDIT33,162,184,60,14,ES_AUTOHSCROLL
+    LTEXT           "接收正确包数",IDC_STATIC,233,187,49,8
+    EDITTEXT        IDC_EDIT34,275,184,60,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "获取包计数",IDC_BUTTON18,323,16,50,14
+    LTEXT           "接收错误包数",IDC_STATIC,341,187,49,8
+    EDITTEXT        IDC_EDIT35,395,184,60,14,ES_AUTOHSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,927
+ PRODUCTVERSION 1,0,0,927
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "天仪CAN-UART助手 Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 927\0"
+            VALUE "InternalName", "天仪CAN-UART助手\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2019\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "天仪CAN-UART助手.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "天仪CAN-UART助手 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 927\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_TSCVC6_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 515
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 467
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "favicon.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 天仪CAN-UART助手(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\tscvc6.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
